@@ -1,5 +1,6 @@
 from django.urls import path,include
+from contacts import views
 
-urlspatterns=[
-    path('contacts/',include('contacts.views'))
+urlpatterns= [
+    path('',views.contact)
 ]

@@ -5,23 +5,22 @@ def categories(request):
     return render(request,)
 
 def moscow_detail(request):
-    moscow_detail=Details.object.filter(option='moscow_detail')
-    context={
-        'product': moscow_detail
+    moscow_detail= Details.objects.Filter(option='moscow_detail')
+    context = {
+        'products':moscow_detail
     }
-    return render(request,context)
+    return render(request,context,)
 
 def sliva_detail(request):
-    sliva_detail=Details.object.filter(option='sliva_detail')
-    context={
-        'product':sliva_detail
+    sliva_detail=Details.objects.Filter(option='sliva_detail')
+    context= {
+        'products':sliva_detail
     }
-    return render (request,context)
+    return render(request,context,)
 
 def volga_detail(request):
-    volga_detail=Details.object.filter(option='volga_detail')
-    context={
-        'product':volga_detail
+    volga_detail= Details.objects.Filter(option='volga_detail')
+    context= {
+        'products':volga_detail
     }
-    return render (request,context)
-
+    return render(request,context,)
